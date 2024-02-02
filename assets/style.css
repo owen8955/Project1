@@ -1,0 +1,27 @@
+#container {
+    display: block;
+    text-align: center;
+    background-color: aquamarine;
+    margin:200px;
+    padding: 10px;
+    opacity: .9;
+
+}
+
+.poke{
+    margin: 100px;
+}
+
+body {
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: block;
+    text-align:center;
+    background-color: aquamarine;
+
+}
