@@ -29,6 +29,15 @@ This is a web application designed for Pokémon enthusiasts. It allows users to 
 - Once a Pokemon is searched, the user will also be presented with GIFs related to Pokemon.
 - User is able to go back and search for new Pokemons once they decide they are done looking at the previous Pokemon.
 - If user enters a Pokemon name that does not exist or typed it in incorrectly, an error message will pop out.
+
+## Challenges
+Merging Files, Pull Requests, etc
+
+Schedule and Time of Conflict
+
+API Selection
+
+
   
 ## How to Use
 
