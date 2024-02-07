@@ -50,3 +50,7 @@ https://www.youtube.com/watch?v=9hnJsNIBq1g
 https://www.youtube.com/watch?v=0yhetysnDRI
 
 https://www.w3schools.com/html/html_colors.asp
+
+https://github.com/favware/graphql-pokemon
+
+https://developers.giphy.com/docs/sdk/
