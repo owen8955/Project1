@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Css/index.css" />
+    <link rel="stylesheet" href="Css/pokemonDetails.css" />
+  </head>
+  <style></style>
+  <body>
+    <section
+      class="background h-screen w-full flex md:flex-row flex-col bg-black bg-opacity-40"
+    >
+      <div class="md:w-[78%] w-[100%]">
+        <div class="md:w-[398px] w-[100%]">
+          <a href="index.html">
+            <button
+              type="submit"
+              class="text-white mb-4 w-min text-sm rounded-full px-6 py-3 pt-3.5 m-4 text-xs font-bold uppercase leading-normal ease-in-out hover:bg-opacity-70 bg-gradient-to-r transition-all duration-300 from-amber-500 via-gray-500 to-black hover:bg-gradient-to-br"
+            >
+              Back
+            </button>
+          </a>
+          <div id="pokemonDetails"></div>
+        </div>
+      </div>
+
+      <div
+        id="gif-container"
+        class="h-screen mt-12 md:mt-0 mx-auto flex item-center justify-center flex-col"
+      ></div>
+    </section>
+
+    <script src="./Js/pokemonDetails.js"></script>
+  </body>
+</html>
