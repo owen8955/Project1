@@ -1,45 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Css/index.css" />
+  </head>
+  <body>
+    <!--initial search page to enter pokemon name-->
+    <section
+      class="background flex flex-col items-center justify-center bg-black bg-opacity-40 h-screen"
+    >
+      <h1
+        class="text-white font-bold text-3xl md:text-4xl lg:text-5xl absolute top-5 text-center"
+      >
+        Pokemon Card Search
+      </h1>
+      <h2
+        class="text-white font-bold text-xl md:text-2xl lg:text-4xl mb-4 text-center"
+      >
+        Looking for more information about a pokemon card?
+      </h2>
+      <h3
+        class="text-white font-bold text-lg md:text-xl lg:text-2xl px-4 md:px-0 mb-12 text-center"
+      >
+        Enter Pokemon name in the search bar below and find out more about it!
+      </h3>
+      <div class="w-full px-4 md:w-3/4 lg:w-1/2">
+        <form id="pokemonForm" onsubmit="getPokemonDetailsByName(event)">
+          <label
+            for="search"
+            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+          >
+            Search
+          </label>
+          <div class="relative">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="search"
+              autocomplete="off"
+              id="search"
+              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-100 outline-none"
+              placeholder="Enter Pokemon name"
+              required
+            />
+            <button
+              type="submit"
+              id="searchButton"
+              class="text-white focus:outline-none absolute right-2.5 bottom-1.5 px-4 py-2.5 font-medium uppercase leading-normal transition duration-300 w-min rounded-lg text-sm pt-2.4 ease-in-out hover:bg-opacity-70 bg-gradient-to-r transition-all from-amber-500 via-gray-600 to-black hover:bg-gradient-to-br"
+            >
+              Search
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
 
-<head>
-<meta charset="UTF-8" />
-<<<<<<< HEAD
-<meta name= "viewport" content=" width=device-width, initial-scale= 1.0">
-=======
-<meta name= "viewport" content="width=device-width" initial-scale="1.0">
->>>>>>> origin
-<title>Who Doesn't Love Pokemon?</title>
-<link rel="stylesheet" type="text/css" href="./assets/style.css">
-</head>
+    <div
+      id="errorModal"
+      class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center p-4"
+    >
+      <!-- Modal content -->
+      <div
+        class="relative mx-auto p-4 border shadow-lg rounded-md bg-white w-full sm:w-3/4 md:w-1/2 lg:w-1/3"
+      >
+        <div class="text-center">
+          <h3 class="text-lg leading-6 font-medium text-gray-900">
+            Pokemon Not Found
+          </h3>
+          <div class="mt-2 px-4 py-3">
+            <p class="text-sm text-gray-500">
+              Sorry, we couldn't find the Pokemon you're looking for. Please try
+              again.
+            </p>
+          </div>
+          <div class="px-4 py-3">
+            <button
+              id="closeModal"
+              class="px-4 py-2 bg-gray-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<<<<<<< HEAD
-<body style="background-image: url('./images/background.jpg');">
-    <header class="header">
-        <h1> Pokemon & Cards</h1>
-    </header>
-    <div id= "container">
-    <div class="poke">
-    <h1> Who Doesn't Love Pokemon?</h1>
-        <p> Please enter a Pokemon name to unlock GIFs, trading cards and much more!</p>
-        <input type="text" id="pokemon-name">
-        <button type="submit-btn">Search</button>
-    </div>
-    <div id= "pokemon-info"> </div>
-    <script src="./script.js"></script>
-</div>
-</body>
+    <script src="Js/index.js"></script>
+  </body>
 </html>
-=======
-<body>
-    <div>
-    <h1> Please Enter Pokemon Name</h1>
-    </div>
-        <div id="pokemon-form">
-        <input type="text" id="pokemon-name">
-        <button type="submit">Search</button>
-    </div>
-    <div id= "pokemon-info"> </div>
-    <script src="./assets/script.js"></script>
-</body>
-</html>
->>>>>>> origin
