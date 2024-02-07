@@ -43,3 +43,10 @@ This is a web application designed for Pokémon enthusiasts. It allows users to 
 - **Tailwind CSS**: For styling the application with a responsive design.
 - **JavaScript**: For creating dynamic and interactive user experiences.
 - **API**: For fetching Pokémon information and GIFs.
+
+## Citations and Help
+https://www.youtube.com/watch?v=9hnJsNIBq1g
+
+https://www.youtube.com/watch?v=0yhetysnDRI
+
+https://www.w3schools.com/html/html_colors.asp
