@@ -1,5 +1,9 @@
 # Pokémon Info Finder
 
+# Deployed Link
+https://ppeterson609.github.io/Project1/index.html
+
+
 ## Description
 
 This is a web application designed for Pokémon enthusiasts. It allows users to enter the name of a Pokémon and retrieves detailed information about it, including three animated GIFs that showcase the Pokémon in a fun and engaging way. The interface is built using HTML, styled with Tailwind CSS, and powered by JavaScript for dynamic content handling.
